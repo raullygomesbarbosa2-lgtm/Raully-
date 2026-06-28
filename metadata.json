@@ -1,0 +1,6 @@
+{
+  "name": "Brasil TV Aberta",
+  "description": "Aplicativo de TV aberta do Brasil com canais ao vivo, player de alta definição, grade de programação interativa e favoritos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
