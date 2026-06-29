@@ -160,7 +160,7 @@ export const INITIAL_CHANNELS: Channel[] = [
     logo: 'CINE',
     logoBg: 'bg-amber-600',
     category: 'Filmes & Séries',
-    streamUrl: 'https://amg-plutotv.akamaized.net/hls/live/2012017/cinelasucessos/playlist.m3u8',
+    streamUrl: 'https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/5f120e94a5714d00074576a1/master.m3u8?advertisingId=&appName=web&appVersion=8.1.0&app_name=web&clientDeviceType=0&clientID=e90092d6-73aa-11f1-9b62-00224833195a&clientModelNumber=1.0.0&country=BR&deviceDNT=false&deviceId=e90092d6-73aa-11f1-9b62-00224833195a&deviceLat=-22.9000&deviceLon=-43.3200&deviceMake=chrome&deviceModel=web&deviceType=web&deviceVersion=133.0.0&marketingRegion=BR&serverSideAds=false&sessionID=e90587f1-73aa-11f1-9d36-563000e8113a&sid=e90587f1-73aa-11f1-9d36-563000e8113a&userId=&jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6IjY5NDBhYWZkLTNmY2UtNDZkNC05N2U4LTZkYWEzYjAwNDEzYiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiJlOTA1ODdmMS03M2FhLTExZjEtOWQzNi01NjMwMDBlODExM2EiLCJjbGllbnRJUCI6IjE3Ny4xOTIuMjU1LjM4IiwiY2l0eSI6IlJpbyBEZSBKYW5laXJvIiwicG9zdGFsQ29kZSI6IjIwNzQwLTQ4MCIsImNvdW50cnkiOiJCUiIsImRtYSI6NzYwMDgsImFjdGl2ZVJlZ2lvbiI6IkJSIiwiZGV2aWNlTGF0IjotMjIuODk5OTk5NjE4NTMwMjczLCJkZXZpY2VMb24iOi00My4zMTk5OTk2OTQ4MjQyMiwicHJlZmVycmVkTGFuZ3VhZ2UiOiJlbiIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTMzLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4xLjAiLCJjbGllbnRJRCI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImNtQXVkaWVuY2VJRCI6IiIsImlzQ2xpZW50RE5UIjpmYWxzZSwidXNlcklEIjoiIiwibG9nTGV2ZWwiOiJERUZBVUxUIiwidGltZVpvbmUiOiJBbWVyaWNhL1Nhb19QYXVsbyIsInNlcnZlclNpZGVBZHMiOmZhbHNlLCJlMmVCZWFjb25zIjpmYWxzZSwiZmVhdHVyZXMiOnsibXVsdGlQb2RBZHMiOnsiY29ob3J0IjoiIiwiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmciOnsiZGVtdXhlZEF1ZGlvIjoiaml0In19LCJmbXNQYXJhbXMiOnsiZndWY0lEMiI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImZ3VmNJRDJDb3BwYSI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImN1c3RvbVBhcmFtcyI6eyJmbXNfbGl2ZXJhbXBfaWRsIjoiIiwiZm1zX2VtYWlsaGFzaCI6IiIsImZtc19zdWJzY3JpYmVyaWQiOiIiLCJmbXNfaWZhIjoiIiwiZm1zX2lkZnYiOiIiLCJmbXNfdXNlcmlkIjoiZTkwMDkyZDYtNzNhYS0xMWYxLTliNjItMDAyMjQ4MzMxOTVhIiwiZm1zX3ZjaWQydHlwZSI6InVzZXJpZCIsImZtc19yYW1wX2lkIjoiIiwiZm1zX2hoX3JhbXBfaWQiOiIiLCJmbXNfYmlkaWR0eXBlIjoiMTA0NiIsIl9md18zUF9VSUQiOiJJREw6QXNMSmZaWS1DN1o5azgwUWMyLTAybzdvbzkteVdzNHYxZlpCa2Z2QUZCOGQwbVBEV29nWF9TVXl6c2EwNU1IblF1T1FGd0JFd3ZVMmczU1VrZWxldG5qNkd1a09CaUVwcGl5WEh1am5rUV9pUWpLa0Qtdi0tSVNJanFpMXlLVzlRVkZsaVlFZDQtM1dXOFlROEtRWmQxYTRvYUZTelpZdFpIdjV2d295Y3RESkUtRTM1eFN2Mmdfel9sX0g1T0lhd1hodENxUHBGNk9Od1JPVlBSSDNnRWFnQ0dRdWtEdU5GTXRjNTROME5Zam90ZVFwM0ZIUTh6OW42b0hKQ1EzY2ZuRlB1a0M3dWliSHNZZmtUc1A0bFdPems0a0xSS2FlT0ZQclBLWHZWX2h6Z1NnNGtoX180Szc0Vl9MM1hQUTZ1NFJaMTY2M2ZLekw1ckVrUDRXY1BvMGN6S0hNTkdlMmZvbjg4Y0FFWXciLCJmbXNfcnVsZWlkIjoiMTAwMTYsMTAwMjAsMTAwMDksMTAwMTMsMTAwMTUsMTAwMjEsMTAwMjMsMTAwMDAsMTAwMTQifX0sImRybSI6eyJuYW1lIjoid2lkZXZpbmUiLCJsZXZlbCI6IkwzIn0sInNlc3Npb25TdGFydFRpbWUiOjE3ODI3MzEzMzE2MjgsImlzcyI6ImJvb3QucGx1dG8udHYiLCJzdWIiOiJwcmk6djE6cGx1dG86ZGV2aWNlczpCUjpaVGt3TURreVpEWXROek5oWVMweE1XWXhMVGxpTmpJdE1EQXlNalE0TXpNeE9UVmgiLCJhdWQiOiIqLnBsdXRvLnR2IiwiZXhwIjoxNzgyODE3NzMxLCJpYXQiOjE3ODI3MzEzMzEsImp0aSI6IjBhODYwYjM4LWZlN2QtNDNhNi04YmYxLTMzNGM4MjdkOGU5NyJ9.4XDVNC9wp3ZW6xL0MLaWJ_ZulT_i25XO2ibFtCTbTm0&quality=720p&deviceMake=chrome&deviceType=web&deviceModel=web&deviceVersion=133.0.0&architecture=x86_64&buildVersion=1.0.0&includeExtendedEvents=true&masterJWTPassthrough=true',
     type: 'hls',
     description: 'Canal de exibição ininterrupta com os maiores sucessos e blockbusters internacionais dublados em excelente qualidade.',
     currentShow: 'Maratona Blockbuster',
@@ -207,6 +207,20 @@ export const INITIAL_CHANNELS: Channel[] = [
 
   // --- DESENHOS & KIDS ---
   {
+    id: 'cartoon-network',
+    name: 'Cartoon Network',
+    logo: 'CN',
+    logoBg: 'bg-zinc-800',
+    category: 'Desenhos & Kids',
+    streamUrl: 'https://cdn-5.nxplay.com.br/CARTOON_NETWORK/index.m3u8',
+    type: 'hls',
+    backupUrl: 'https://cdn-5.nxplay.com.br/CARTOON_NETWORK_TK/index.m3u8',
+    backupType: 'hls',
+    description: 'O maior canal de desenhos animados do mundo, trazendo clássicos e novas produções como O Incrível Mundo de Gumball, Hora de Aventura, Apenas um Show e muito mais.',
+    currentShow: 'O Incrível Mundo de Gumball',
+    nextShow: 'Hora de Aventura'
+  },
+  {
     id: 'nicktoons-brasil',
     name: 'NickToons Brasil',
     logo: 'NTO',
@@ -224,7 +238,7 @@ export const INITIAL_CHANNELS: Channel[] = [
     logo: 'ANI',
     logoBg: 'bg-violet-600',
     category: 'Desenhos & Kids',
-    streamUrl: 'https://amg-plutotv.akamaized.net/hls/live/2012017/anime/playlist.m3u8',
+    streamUrl: 'https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/5f12136385bccc00070142ed/master.m3u8?advertisingId=&appName=web&appVersion=8.1.0&app_name=web&clientDeviceType=0&clientID=e90092d6-73aa-11f1-9b62-00224833195a&clientModelNumber=1.0.0&country=BR&deviceDNT=false&deviceId=e90092d6-73aa-11f1-9b62-00224833195a&deviceLat=-22.9000&deviceLon=-43.3200&deviceMake=chrome&deviceModel=web&deviceType=web&deviceVersion=133.0.0&marketingRegion=BR&serverSideAds=false&sessionID=e90587f1-73aa-11f1-9d36-563000e8113a&sid=e90587f1-73aa-11f1-9d36-563000e8113a&userId=&jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6IjY5NDBhYWZkLTNmY2UtNDZkNC05N2U4LTZkYWEzYjAwNDEzYiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiJlOTA1ODdmMS03M2FhLTExZjEtOWQzNi01NjMwMDBlODExM2EiLCJjbGllbnRJUCI6IjE3Ny4xOTIuMjU1LjM4IiwiY2l0eSI6IlJpbyBEZSBKYW5laXJvIiwicG9zdGFsQ29kZSI6IjIwNzQwLTQ4MCIsImNvdW50cnkiOiJCUiIsImRtYSI6NzYwMDgsImFjdGl2ZVJlZ2lvbiI6IkJSIiwiZGV2aWNlTGF0IjotMjIuODk5OTk5NjE4NTMwMjczLCJkZXZpY2VMb24iOi00My4zMTk5OTk2OTQ4MjQyMiwicHJlZmVycmVkTGFuZ3VhZ2UiOiJlbiIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTMzLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4xLjAiLCJjbGllbnRJRCI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImNtQXVkaWVuY2VJRCI6IiIsImlzQ2xpZW50RE5UIjpmYWxzZSwidXNlcklEIjoiIiwibG9nTGV2ZWwiOiJERUZBVUxUIiwidGltZVpvbmUiOiJBbWVyaWNhL1Nhb19QYXVsbyIsInNlcnZlclNpZGVBZHMiOmZhbHNlLCJlMmVCZWFjb25zIjpmYWxzZSwiZmVhdHVyZXMiOnsibXVsdGlQb2RBZHMiOnsiY29ob3J0IjoiIiwiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmciOnsiZGVtdXhlZEF1ZGlvIjoiaml0In19LCJmbXNQYXJhbXMiOnsiZndWY0lEMiI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImZ3VmNJRDJDb3BwYSI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImN1c3RvbVBhcmFtcyI6eyJmbXNfbGl2ZXJhbXBfaWRsIjoiIiwiZm1zX2VtYWlsaGFzaCI6IiIsImZtc19zdWJzY3JpYmVyaWQiOiIiLCJmbXNfaWZhIjoiIiwiZm1zX2lkZnYiOiIiLCJmbXNfdXNlcmlkIjoiZTkwMDkyZDYtNzNhYS0xMWYxLTliNjItMDAyMjQ4MzMxOTVhIiwiZm1zX3ZjaWQydHlwZSI6InVzZXJpZCIsImZtc19yYW1wX2lkIjoiIiwiZm1zX2hoX3JhbXBfaWQiOiIiLCJmbXNfYmlkaWR0eXBlIjoiMTA0NiIsIl9md18zUF9VSUQiOiJJREw6QXNMSmZaWS1DN1o5azgwUWMyLTAybzdvbzkteVdzNHYxZlpCa2Z2QUZCOGQwbVBEV29nWF9TVXl6c2EwNU1IblF1T1FGd0JFd3ZVMmczU1VrZWxldG5qNkd1a09CaUVwcGl5WEh1am5rUV9pUWpLa0Qtdi0tSVNJanFpMXlLVzlRVkZsaVlFZDQtM1dXOFlROEtRWmQxYTRvYUZTelpZdFpIdjV2d295Y3RESkUtRTM1eFN2Mmdfel9sX0g1T0lhd1hodENxUHBGNk9Od1JPVlBSSDNnRWFnQ0dRdWtEdU5GTXRjNTROME5Zam90ZVFwM0ZIUTh6OW42b0hKQ1EzY2ZuRlB1a0M3dWliSHNZZmtUc1A0bFdPems0a0xSS2FlT0ZQclBLWHZWX2h6Z1NnNGtoX180Szc0Vl9MM1hQUTZ1NFJaMTY2M2ZLekw1ckVrUDRXY1BvMGN6S0hNTkdlMmZvbjg4Y0FFWXciLCJmbXNfcnVsZWlkIjoiMTAwMTYsMTAwMjAsMTAwMDksMTAwMTMsMTAwMTUsMTAwMjEsMTAwMjMsMTAwMDAsMTAwMTQifX0sImRybSI6eyJuYW1lIjoid2lkZXZpbmUiLCJsZXZlbCI6IkwzIn0sInNlc3Npb25TdGFydFRpbWUiOjE3ODI3MzEzMzE2MjgsImlzcyI6ImJvb3QucGx1dG8udHYiLCJzdWIiOiJwcmk6djE6cGx1dG86ZGV2aWNlczpCUjpaVGt3TURreVpEWXROek5oWVMweE1XWXhMVGxpTmpJdE1EQXlNalE0TXpNeE9UVmgiLCJhdWQiOiIqLnBsdXRvLnR2IiwiZXhwIjoxNzgyODE3NzMxLCJpYXQiOjE3ODI3MzEzMzEsImp0aSI6IjBhODYwYjM4LWZlN2QtNDNhNi04YmYxLTMzNGM4MjdkOGU5NyJ9.4XDVNC9wp3ZW6xL0MLaWJ_ZulT_i25XO2ibFtCTbTm0&quality=720p&deviceMake=chrome&deviceType=web&deviceModel=web&deviceVersion=133.0.0&architecture=x86_64&buildVersion=1.0.0&includeExtendedEvents=true&masterJWTPassthrough=true',
     type: 'hls',
     description: 'O canal perfeito para os amantes da cultura pop japonesa com maratonas de animes clássicos e modernos de ação e aventura.',
     currentShow: 'Saga de Ação Anime',
@@ -248,131 +262,13 @@ export const INITIAL_CHANNELS: Channel[] = [
     logo: 'RET',
     logoBg: 'bg-amber-700',
     category: 'Desenhos & Kids',
-    streamUrl: 'https://amg-plutotv.akamaized.net/hls/live/2012017/allclassiccartoons/playlist.m3u8',
     type: 'hls',
-    backupUrl: 'https://amg-plutotv.akamaized.net/hls/live/2012017/nickclassico/playlist.m3u8',
+    streamUrl: 'https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/655e5c4d2c46f3000877a54b/master.m3u8?advertisingId=&appName=web&appVersion=8.1.0&app_name=web&clientDeviceType=0&clientID=e90092d6-73aa-11f1-9b62-00224833195a&clientModelNumber=1.0.0&country=BR&deviceDNT=false&deviceId=e90092d6-73aa-11f1-9b62-00224833195a&deviceLat=-22.9000&deviceLon=-43.3200&deviceMake=chrome&deviceModel=web&deviceType=web&deviceVersion=133.0.0&marketingRegion=BR&serverSideAds=false&sessionID=e90587f1-73aa-11f1-9d36-563000e8113a&sid=e90587f1-73aa-11f1-9d36-563000e8113a&userId=&jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6IjY5NDBhYWZkLTNmY2UtNDZkNC05N2U4LTZkYWEzYjAwNDEzYiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiJlOTA1ODdmMS03M2FhLTExZjEtOWQzNi01NjMwMDBlODExM2EiLCJjbGllbnRJUCI6IjE3Ny4xOTIuMjU1LjM4IiwiY2l0eSI6IlJpbyBEZSBKYW5laXJvIiwicG9zdGFsQ29kZSI6IjIwNzQwLTQ4MCIsImNvdW50cnkiOiJCUiIsImRtYSI6NzYwMDgsImFjdGl2ZVJlZ2lvbiI6IkJSIiwiZGV2aWNlTGF0IjotMjIuODk5OTk5NjE4NTMwMjczLCJkZXZpY2VMb24iOi00My4zMTk5OTk2OTQ4MjQyMiwicHJlZmVycmVkTGFuZ3VhZ2UiOiJlbiIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTMzLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4xLjAiLCJjbGllbnRJRCI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImNtQXVkaWVuY2VJRCI6IiIsImlzQ2xpZW50RE5UIjpmYWxzZSwidXNlcklEIjoiIiwibG9nTGV2ZWwiOiJERUZBVUxUIiwidGltZVpvbmUiOiJBbWVyaWNhL1Nhb19QYXVsbyIsInNlcnZlclNpZGVBZHMiOmZhbHNlLCJlMmVCZWFjb25zIjpmYWxzZSwiZmVhdHVyZXMiOnsibXVsdGlQb2RBZHMiOnsiY29ob3J0IjoiIiwiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmciOnsiZGVtdXhlZEF1ZGlvIjoiaml0In19LCJmbXNQYXJhbXMiOnsiZndWY0lEMiI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImZ3VmNJRDJDb3BwYSI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImN1c3RvbVBhcmFtcyI6eyJmbXNfbGl2ZXJhbXBfaWRsIjoiIiwiZm1zX2VtYWlsaGFzaCI6IiIsImZtc19zdWJzY3JpYmVyaWQiOiIiLCJmbXNfaWZhIjoiIiwiZm1zX2lkZnYiOiIiLCJmbXNfdXNlcmlkIjoiZTkwMDkyZDYtNzNhYS0xMWYxLTliNjItMDAyMjQ4MzMxOTVhIiwiZm1zX3ZjaWQydHlwZSI6InVzZXJpZCIsImZtc19yYW1wX2lkIjoiIiwiZm1zX2hoX3JhbXBfaWQiOiIiLCJmbXNfYmlkaWR0eXBlIjoiMTA0NiIsIl9md18zUF9VSUQiOiJJREw6QXNMSmZaWS1DN1o5azgwUWMyLTAybzdvbzkteVdzNHYxZlpCa2Z2QUZCOGQwbVBEV29nWF9TVXl6c2EwNU1IblF1T1FGd0JFd3ZVMmczU1VrZWxldG5qNkd1a09CaUVwcGl5WEh1am5rUV9pUWpLa0Qtdi0tSVNJanFpMXlLVzlRVkZsaVlFZDQtM1dXOFlROEtRWmQxYTRvYUZTelpZdFpIdjV2d295Y3RESkUtRTM1eFN2Mmdfel9sX0g1T0lhd1hodENxUHBGNk9Od1JPVlBSSDNnRWFnQ0dRdWtEdU5GTXRjNTROME5Zam90ZVFwM0ZIUTh6OW42b0hKQ1EzY2ZuRlB1a0M3dWliSHNZZmtUc1A0bFdPems0a0xSS2FlT0ZQclBLWHZWX2h6Z1NnNGtoX180Szc0Vl9MM1hQUTZ1NFJaMTY2M2ZLekw1ckVrUDRXY1BvMGN6S0hNTkdlMmZvbjg4Y0FFWXciLCJmbXNfcnVsZWlkIjoiMTAwMTYsMTAwMjAsMTAwMDksMTAwMTMsMTAwMTUsMTAwMjEsMTAwMjMsMTAwMDAsMTAwMTQifX0sImRybSI6eyJuYW1lIjoid2lkZXZpbmUiLCJsZXZlbCI6IkwzIn0sInNlc3Npb25TdGFydFRpbWUiOjE3ODI3MzEzMzE2MjgsImlzcyI6ImJvb3QucGx1dG8udHYiLCJzdWIiOiJwcmk6djE6cGx1dG86ZGV2aWNlczpCUjpaVGt3TURreVpEWXROek5oWVMweE1XWXhMVGxpTmpJdE1EQXlNalE0TXpNeE9UVmgiLCJhdWQiOiIqLnBsdXRvLnR2IiwiZXhwIjoxNzgyODE3NzMxLCJpYXQiOjE3ODI3MzEzMzEsImp0aSI6IjBhODYwYjM4LWZlN2QtNDNhNi04YmYxLTMzNGM4MjdkOGU5NyJ9.4XDVNC9wp3ZW6xL0MLaWJ_ZulT_i25XO2ibFtCTbTm0&quality=720p&deviceMake=chrome&deviceType=web&deviceModel=web&deviceVersion=133.0.0&architecture=x86_64&buildVersion=1.0.0&includeExtendedEvents=true&masterJWTPassthrough=true',
+    backupUrl: 'https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/6824ce10c5d53e1351ceb8d1/master.m3u8?advertisingId=&appName=web&appVersion=8.1.0&app_name=web&clientDeviceType=0&clientID=e90092d6-73aa-11f1-9b62-00224833195a&clientModelNumber=1.0.0&country=BR&deviceDNT=false&deviceId=e90092d6-73aa-11f1-9b62-00224833195a&deviceLat=-22.9000&deviceLon=-43.3200&deviceMake=chrome&deviceModel=web&deviceType=web&deviceVersion=133.0.0&marketingRegion=BR&serverSideAds=false&sessionID=e90587f1-73aa-11f1-9d36-563000e8113a&sid=e90587f1-73aa-11f1-9d36-563000e8113a&userId=&jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6IjY5NDBhYWZkLTNmY2UtNDZkNC05N2U4LTZkYWEzYjAwNDEzYiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiJlOTA1ODdmMS03M2FhLTExZjEtOWQzNi01NjMwMDBlODExM2EiLCJjbGllbnRJUCI6IjE3Ny4xOTIuMjU1LjM4IiwiY2l0eSI6IlJpbyBEZSBKYW5laXJvIiwicG9zdGFsQ29kZSI6IjIwNzQwLTQ4MCIsImNvdW50cnkiOiJCUiIsImRtYSI6NzYwMDgsImFjdGl2ZVJlZ2lvbiI6IkJSIiwiZGV2aWNlTGF0IjotMjIuODk5OTk5NjE4NTMwMjczLCJkZXZpY2VMb24iOi00My4zMTk5OTk2OTQ4MjQyMiwicHJlZmVycmVkTGFuZ3VhZ2UiOiJlbiIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTMzLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4xLjAiLCJjbGllbnRJRCI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImNtQXVkaWVuY2VJRCI6IiIsImlzQ2xpZW50RE5UIjpmYWxzZSwidXNlcklEIjoiIiwibG9nTGV2ZWwiOiJERUZBVUxUIiwidGltZVpvbmUiOiJBbWVyaWNhL1Nhb19QYXVsbyIsInNlcnZlclNpZGVBZHMiOmZhbHNlLCJlMmVCZWFjb25zIjpmYWxzZSwiZmVhdHVyZXMiOnsibXVsdGlQb2RBZHMiOnsiY29ob3J0IjoiIiwiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmciOnsiZGVtdXhlZEF1ZGlvIjoiaml0In19LCJmbXNQYXJhbXMiOnsiZndWY0lEMiI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImZ3VmNJRDJDb3BwYSI6ImU5MDA5MmQ2LTczYWEtMTFmMS05YjYyLTAwMjI0ODMzMTk1YSIsImN1c3RvbVBhcmFtcyI6eyJmbXNfbGl2ZXJhbXBfaWRsIjoiIiwiZm1zX2VtYWlsaGFzaCI6IiIsImZtc19zdWJzY3JpYmVyaWQiOiIiLCJmbXNfaWZhIjoiIiwiZm1zX2lkZnYiOiIiLCJmbXNfdXNlcmlkIjoiZTkwMDkyZDYtNzNhYS0xMWYxLTliNjItMDAyMjQ4MzMxOTVhIiwiZm1zX3ZjaWQydHlwZSI6InVzZXJpZCIsImZtc19yYW1wX2lkIjoiIiwiZm1zX2hoX3JhbXBfaWQiOiIiLCJmbXNfYmlkaWR0eXBlIjoiMTA0NiIsIl9md18zUF9VSUQiOiJJREw6QXNMSmZaWS1DN1o5azgwUWMyLTAybzdvbzkteVdzNHYxZlpCa2Z2QUZCOGQwbVBEV29nWF9TVXl6c2EwNU1IblF1T1FGd0JFd3ZVMmczU1VrZWxldG5qNkd1a09CaUVwcGl5WEh1am5rUV9pUWpLa0Qtdi0tSVNJanFpMXlLVzlRVkZsaVlFZDQtM1dXOFlROEtRWmQxYTRvYUZTelpZdFpIdjV2d295Y3RESkUtRTM1eFN2Mmdfel9sX0g1T0lhd1hodENxUHBGNk9Od1JPVlBSSDNnRWFnQ0dRdWtEdU5GTXRjNTROME5Zam90ZVFwM0ZIUTh6OW42b0hKQ1EzY2ZuRlB1a0M3dWliSHNZZmtUc1A0bFdPems0a0xSS2FlT0ZQclBLWHZWX2h6Z1NnNGtoX180Szc0Vl9MM1hQUTZ1NFJaMTY2M2ZLekw1ckVrUDRXY1BvMGN6S0hNTkdlMmZvbjg4Y0FFWXciLCJmbXNfcnVsZWlkIjoiMTAwMTYsMTAwMjAsMTAwMDksMTAwMTMsMTAwMTUsMTAwMjEsMTAwMjMsMTAwMDAsMTAwMTQifX0sImRybSI6eyJuYW1lIjoid2lkZXZpbmUiLCJsZXZlbCI6IkwzIn0sInNlc3Npb25TdGFydFRpbWUiOjE3ODI3MzEzMzE2MjgsImlzcyI6ImJvb3QucGx1dG8udHYiLCJzdWIiOiJwcmk6djE6cGx1dG86ZGV2aWNlczpCUjpaVGt3TURreVpEWXROek5oWVMweE1XWXhMVGxpTmpJdE1EQXlNalE0TXpNeE9UVmgiLCJhdWQiOiIqLnBsdXRvLnR2IiwiZXhwIjoxNzgyODE3NzMxLCJpYXQiOjE3ODI3MzEzMzEsImp0aSI6IjBhODYwYjM4LWZlN2QtNDNhNi04YmYxLTMzNGM4MjdkOGU5NyJ9.4XDVNC9wp3ZW6xL0MLaWJ_ZulT_i25XO2ibFtCTbTm0&quality=720p&deviceMake=chrome&deviceType=web&deviceModel=web&deviceVersion=133.0.0&architecture=x86_64&buildVersion=1.0.0&includeExtendedEvents=true&masterJWTPassthrough=true',
     backupType: 'hls',
     description: 'Reviva sua infância com desenhos clássicos icônicos dos anos 70, 80 e 90 com muita nostalgia.',
     currentShow: 'Sessão Clássicos Animados',
     nextShow: 'Aventuras Nostálgicas'
-  },
-
-  // --- ESPORTES ---
-  {
-    id: 'caze-tv-hls',
-    name: 'CazéTV Esportes',
-    logo: 'CZV',
-    logoBg: 'bg-amber-500',
-    category: 'Esportes',
-    streamUrl: 'https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/Caze_TV.m3u8',
-    type: 'hls',
-    description: 'Esportes dinâmicos com transmissões de futebol ao vivo, entrevistas exclusivas, mesas redondas e o melhor do mundo olímpico.',
-    currentShow: 'Resenha Esportiva',
-    nextShow: 'Campeonato Nacional Ao Vivo'
-  },
-  {
-    id: 'bandsports',
-    name: 'BandSports',
-    logo: 'BSP',
-    logoBg: 'bg-emerald-800',
-    category: 'Esportes',
-    streamUrl: 'https://cdn-5.nxplay.com.br/BAND_SPORTS/index.m3u8',
-    type: 'hls',
-    backupUrl: 'http://143.14.178.40:7777/Band_Sports_HD/index.m3u8',
-    backupType: 'hls',
-    description: 'Transmissão de automobilismo, tênis, ciclismo, vôlei e análises profundas de futebol com cronistas renomados.',
-    currentShow: 'Giro Auto',
-    nextShow: 'BandSports News'
-  },
-  {
-    id: 'sportv-hls',
-    name: 'SporTV Premium',
-    logo: 'SPO',
-    logoBg: 'bg-blue-800',
-    category: 'Esportes',
-    streamUrl: 'https://stm.sinalmycn.com/21000/video.m3u8?token=EkP2qSi13ckjQRLSIDoxI5rMZsF5rZyEYzqWjxD248ScEUPYQ0',
-    type: 'hls',
-    description: 'Cobertura esportiva de elite com transmissão ao vivo dos principais campeonatos nacionais de futebol, atletismo e notícias.',
-    currentShow: 'Seleção SporTV',
-    nextShow: 'Futebol Ao Vivo'
-  },
-
-  // --- CULTURA & EDUCATIVOS ---
-  {
-    id: 'tv-senado',
-    name: 'TV Senado',
-    logo: 'SEN',
-    logoBg: 'bg-cyan-800',
-    category: 'Cultura & Educativos',
-    streamUrl: 'https://senado-hls.b-cdn.net/tvsenado/index.m3u8',
-    type: 'hls',
-    description: 'Acompanhe as transmissões de sessões plenárias, votações de leis, audiências públicas e debates do Senado Federal ao vivo.',
-    currentShow: 'Sessão Plenária',
-    nextShow: 'Agenda Senado'
-  },
-  {
-    id: 'tv-camara',
-    name: 'TV Câmara',
-    logo: 'CAM',
-    logoBg: 'bg-indigo-700',
-    category: 'Cultura & Educativos',
-    streamUrl: 'https://camara-hls.b-cdn.net/tvcamara/index.m3u8',
-    type: 'hls',
-    description: 'Emissora oficial que transmite ao vivo as votações de projetos, discursos dos deputados e discussões de comissões.',
-    currentShow: 'Votações em Plenário',
-    nextShow: 'Destaques da Semana'
-  },
-  {
-    id: 'canal-futura',
-    name: 'Canal Futura',
-    logo: 'FUT',
-    logoBg: 'bg-amber-600',
-    category: 'Cultura & Educativos',
-    streamUrl: 'https://globoplay-hls.b-cdn.net/futura/index.m3u8',
-    type: 'hls',
-    description: 'Canal focado em conhecimento científico, formação profissional de educadores, documentários socioambientais e mobilização social.',
-    currentShow: 'Conexão Futura',
-    nextShow: 'Globo Ciência'
-  },
-
-  // --- RELIGIOSO ---
-  {
-    id: 'rede-vida',
-    name: 'Rede Vida',
-    logo: 'RVD',
-    logoBg: 'bg-sky-600',
-    category: 'Religioso',
-    streamUrl: 'https://redevida.b-cdn.net/redevida/index.m3u8',
-    type: 'hls',
-    description: 'Canal católico brasileiro com conteúdo de fé, pregações edificantes, oração diária, notícias católicas e variedades saudáveis.',
-    currentShow: 'Missa ao Vivo',
-    nextShow: 'Terço de Fé'
-  },
-  {
-    id: 'tv-pai-eterno',
-    name: 'TV Pai Eterno',
-    logo: 'PE',
-    logoBg: 'bg-emerald-700',
-    category: 'Religioso',
-    streamUrl: 'https://sh01.brasilstream.com.br/hls/paieterno/play/playlist.m3u8',
-    backupUrl: 'https://redevida.b-cdn.net/redevida/index.m3u8',
-    type: 'hls',
-    description: 'Transmissão direta de missas e novenas do Santuário de Trindade, documentários de milagres e cânticos religiosos.',
-    currentShow: 'Palavra do Padre',
-    nextShow: 'Missa Solene ao Vivo'
-  },
-  {
-    id: 'tv-cancao-nova',
-    name: 'TV Canção Nova',
-    logo: 'CN',
-    logoBg: 'bg-blue-600',
-    category: 'Religioso',
-    streamUrl: 'https://cancaonova-lh.akamaihd.net/i/tvcn_br@134606/index_1_av-p.m3u8',
-    backupUrl: 'https://redevida.b-cdn.net/redevida/index.m3u8',
-    type: 'hls',
-    description: 'Canal católico focado em evangelização, pregações edificantes, canções de louvor, orações diárias e programas educativos.',
-    currentShow: 'Rosário de Fé',
-    nextShow: 'Missa Canção Nova'
   }
 ];
 
@@ -381,6 +277,14 @@ export function generateScheduleForChannel(channelId: string): Program[] {
   const currentHour = new Date().getHours();
   
   const schedules: Record<string, { title: string; desc: string; category: string }[]> = {
+    'cartoon-network': [
+      { title: 'O Incrível Mundo de Gumball', desc: 'Acompanhe as aventuras surreais do gato azul Gumball e seu irmão adotivo, Darwin.', category: 'Desenhos' },
+      { title: 'Hora de Aventura', desc: 'Finn e Jake enfrentam perigos misteriosos na Terra de Ooo.', category: 'Desenhos' },
+      { title: 'Apenas um Show', desc: 'Mordecai e Rigby tentam evitar o trabalho no parque de todas as formas possíveis.', category: 'Desenhos' },
+      { title: 'Ben 10', desc: 'Ben Tennyson descobre um relógio alienígena super poderoso e protege a Terra.', category: 'Desenhos' },
+      { title: 'As Meninas Superpoderosas', desc: 'Florzinha, Lindinha e Docinho lutam contra o crime na cidade de Townsville.', category: 'Desenhos' },
+      { title: 'Jovens Titãs em Ação', desc: 'Robin, Estelar, Ciborgue, Ravena e Mutano vivem aventuras engraçadas na torre dos Titãs.', category: 'Desenhos' },
+    ],
     'record-news': [
       { title: 'Jornal da Record News', desc: 'Edição com os principais destaques nacionais e internacionais.', category: 'Jornalismo' },
       { title: 'Hora News', desc: 'Boletins dinâmicos com informações em tempo real direto da redação.', category: 'Jornalismo' },
@@ -395,7 +299,7 @@ export function generateScheduleForChannel(channelId: string): Program[] {
       { title: 'Cine Nacional', desc: 'Grandes obras do cinema brasileiro independente e clássico.', category: 'Filme' },
       { title: 'Brasil Visual', desc: 'Artes visuais e patrimônio histórico em um tour de imagens.', category: 'Cultura' },
       { title: 'Estação Plural', desc: 'Debate sobre diversidade, cultura pop e direitos civis.', category: 'Cultura' },
-      { title: 'Curta Brasil', desc: 'Mostra de curtas-metragens premiados em festivais nacionais.', category: 'Filme' },
+      { title: 'Curta Brasil', desc: 'Mostra de curtas-metragens premiados em festivals nacionais.', category: 'Filme' },
     ],
     'tv-globo': [
       { title: 'Jornal Nacional', desc: 'O principal e mais completo noticiário da TV brasileira ao vivo.', category: 'Jornalismo' },
@@ -412,11 +316,6 @@ export function generateScheduleForChannel(channelId: string): Program[] {
       { title: 'Provoca', desc: 'Marcelo Tas entrevista personalidades provocando reflexões profundas.', category: 'Entrevista' },
       { title: 'Metrópolis', desc: 'A agenda cultural de cinema, teatro, música e literatura do país.', category: 'Cultura' },
       { title: 'Sr. Brasil', desc: 'Rolando Boldrin celebra a música de raiz e a cultura interiorana.', category: 'Música' },
-    ],
-    'caze-tv-hls': [
-      { title: 'Resenha CazéTV', desc: 'Equipe de comentaristas debatem os lances da rodada e as fofocas esportivas.', category: 'Esportes' },
-      { title: 'Futebol Ao Vivo', desc: 'Rodadas emocionantes transmitidas com sinal premium gratuito.', category: 'Esportes' },
-      { title: 'Giro dos Esportes', desc: 'As principais contratações, placares de ontem e as fofocas.', category: 'Esportes' },
     ]
   };
 

@@ -40,20 +40,63 @@ async function startServer() {
         keepAlive: true,
       };
 
-      const response = await axios({
-        method: 'GET',
-        url: targetUrl,
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      let headers: Record<string, string> = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+        'Accept': '*/*',
+        'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+      };
+
+      // Set intelligent Referer & Origin based on target URL
+      if (targetUrl.includes('redevida')) {
+        headers['Referer'] = 'https://www.redevida.com.br/';
+        headers['Origin'] = 'https://www.redevida.com.br';
+      } else if (targetUrl.includes('cancaonova')) {
+        headers['Referer'] = 'https://tv.cancaonova.com/';
+        headers['Origin'] = 'https://tv.cancaonova.com';
+      } else {
+        headers['Referer'] = parsedUrl.origin + '/';
+        headers['Origin'] = parsedUrl.origin;
+      }
+
+      let response;
+      try {
+        response = await axios({
+          method: 'GET',
+          url: targetUrl,
+          headers: headers,
+          timeout: 10000,
+          responseType: 'stream',
+          httpsAgent: new https.Agent(agentOptions),
+          httpAgent: new http.Agent(agentOptions),
+          maxRedirects: 8,
+        });
+      } catch (firstErr: any) {
+        const firstStatus = firstErr.response?.status;
+        if (firstStatus === 404) {
+          // If the resource is genuinely not found, skip retry and throw immediately
+          throw firstErr;
+        }
+
+        console.warn(`[Proxy First Attempt Failed] URL: ${targetUrl}. Status: ${firstStatus}. Retrying with clean headers...`);
+        
+        // Clean headers fallback to bypass strict referrer checks
+        const retryHeaders = {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
           'Accept': '*/*',
           'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
-        },
-        timeout: 12000, // 12 seconds timeout to avoid hanging
-        responseType: 'stream',
-        httpsAgent: new https.Agent(agentOptions),
-        httpAgent: new http.Agent(agentOptions),
-        maxRedirects: 8,
-      });
+        };
+
+        response = await axios({
+          method: 'GET',
+          url: targetUrl,
+          headers: retryHeaders,
+          timeout: 15000,
+          responseType: 'stream',
+          httpsAgent: new https.Agent(agentOptions),
+          httpAgent: new http.Agent(agentOptions),
+          maxRedirects: 8,
+        });
+      }
 
       const contentType = (response.headers['content-type'] as string) || '';
 
@@ -128,9 +171,14 @@ async function startServer() {
         response.data.pipe(res);
       }
     } catch (error: any) {
-      console.error('Proxy error fetching:', targetUrl, error.message);
+      const statusCode = error.response?.status || 500;
+      if (statusCode === 404) {
+        // Normal live-streaming rolling segments naturally expire and return 404; log as warning instead of error to avoid false positives
+        console.warn(`[Proxy Resource Expired/Not Found] 404 for URL: ${targetUrl}`);
+      } else {
+        console.error('Proxy error fetching:', targetUrl, error.message);
+      }
       if (!res.headersSent) {
-        const statusCode = error.response?.status || 500;
         res.status(statusCode).send(`Proxy error: ${error.message}`);
       }
     }

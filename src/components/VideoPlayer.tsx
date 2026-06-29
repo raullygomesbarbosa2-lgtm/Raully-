@@ -65,8 +65,8 @@ export default function VideoPlayer({ channel, isCinemaMode, setIsCinemaMode, on
     setIsBuffering(true);
     setHasError(false);
 
-    // Quick timeout (4s) to support fast fallback and responsive channel changes
-    const timeoutDuration = 4000;
+    // Generous timeout (15s) to support slow connections and mobile data
+    const timeoutDuration = 15000;
 
     const handlePlaybackFailure = (reason: string) => {
       clearTimeout(timeoutId);
